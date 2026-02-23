@@ -84,7 +84,7 @@ namespace KeduPayments.Controllers
         /// <returns></returns>
 
         [HttpGet]
-        [Route("responsaveis/{responsavelId:int}/cobrancas")]
+        [Route("{responsavelId:int}/cobrancas")]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<CobrancaResponse>> GetCobrancas(int responsavelId, [FromQuery] string? status, [FromQuery] int? metodoPagamento,
@@ -109,7 +109,7 @@ namespace KeduPayments.Controllers
         /// <param name="responsavelId">ID do responsável cujas cobranças serão contadas.</param>
         /// <returns>Retorna a quantidade de cobranças associadas ao responsável financeiro.</returns>
         [HttpGet]
-        [Route("responsaveis/{responsavelId:int}/quantidade")]
+        [Route("{responsavelId:int}/quantidade")]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<CobrancaResponse>> CountCobrancas(int responsavelId)
