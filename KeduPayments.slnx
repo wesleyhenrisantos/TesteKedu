@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="KeduPayments.Api/KeduPayments.csproj" />
+  <Project Path="KeduPayments.Application/KeduPayments.Application.csproj" />
+  <Project Path="KeduPayments.Domain/KeduPayments.Domain.csproj" Id="4cece097-4f61-4efc-8afe-6aeb02ea072b" />
+  <Project Path="KeduPayments.Infrastructure/KeduPayments.Infrastructure.csproj" Id="a9f2c5e2-9edb-4f76-896a-c581a1e1b249" />
+</Solution>
